@@ -1,3 +1,4 @@
 {
- "item.gudmestadmod.example_item": "Example Item"
+ "item.gudmestadmod.example_item": "Example Item",
+ "block.gudmestadmod.example_block" : "Block of Example"
 }

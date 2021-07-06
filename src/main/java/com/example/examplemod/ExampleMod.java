@@ -1,5 +1,6 @@
 package com.example.examplemod;
 
+import com.example.examplemod.core.init.BlockInit;
 import com.example.examplemod.core.init.ItemInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -33,6 +34,7 @@ public class ExampleMod
         bus.addListener(this::setup);
 
         ItemInit.ITEMS.register(bus);
+        BlockInit.BLOCKS.register(bus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
