@@ -1,4 +1,6 @@
 {
  "item.gudmestadmod.example_item": "Example Item",
- "block.gudmestadmod.example_block" : "Block of Example"
+ "item.tutorial.special_item": "Special Item",
+ "block.gudmestadmod.example_block" : "Block of Example",
+ "tooltip.special_item.hold_shift": "\u00A77Hold \u00A7eShift \u00A77for More Information"
 }
