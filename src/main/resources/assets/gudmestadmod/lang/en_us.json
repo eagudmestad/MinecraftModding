@@ -4,5 +4,6 @@
  "block.gudmestadmod.example_block" : "Block of Example",
  "tooltip.special_item.hold_shift": "\u00A77Hold \u00A7eShift \u00A77for More Information",
  "block.gudmestadmod.custom_block": "Custom Block",
- "itemGroup.tutorialtab": "Tutorial Items"
+ "itemGroup.tutorialtab": "Tutorial Items",
+ "item.tutorial.example_food": "Cherry"
 }
