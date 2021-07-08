@@ -4,6 +4,8 @@ import com.example.examplemod.core.init.BlockInit;
 import com.example.examplemod.core.init.ItemInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -28,6 +30,7 @@ public class ExampleMod
     // Directly reference a log4j logger.
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "gudmestadmod";
+    public static final ItemGroup TUTORIAL_GROUP = new TutorialGroup("tutorialtab");
 
     public ExampleMod() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -42,6 +45,18 @@ public class ExampleMod
     private void setup(final FMLCommonSetupEvent event)
     {
 
+    }
+
+    public static class TutorialGroup extends ItemGroup {
+
+        public TutorialGroup(String label) {
+            super(label);
+        }
+
+        @Override
+        public ItemStack createIcon() {
+            return ItemInit.EXAMPLE_ITEM.get().getDefaultInstance();
+        }
     }
 
 }

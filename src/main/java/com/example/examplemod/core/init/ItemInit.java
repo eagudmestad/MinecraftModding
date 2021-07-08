@@ -14,18 +14,18 @@ public class ItemInit {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ExampleMod.MOD_ID);
 
     public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("example_item",
-            () -> new Item(new Item.Properties().group(ItemGroup.MISC)));
+            () -> new Item(new Item.Properties().group(ExampleMod.TUTORIAL_GROUP)));
 
     public static final RegistryObject<SpecialItem> SPECIAL_ITEM = ITEMS.register("special_item",
-            () -> new SpecialItem(new Item.Properties().group(ItemGroup.MISC)));
+            () -> new SpecialItem(new Item.Properties().group(ExampleMod.TUTORIAL_GROUP)));
 
     //Block Items
     public static final RegistryObject<BlockItem> EXAMPLE_BLOCK = ITEMS.register("example_block",
-            () -> new BlockItem(BlockInit.EXAMPLE_BLOCK.get(),new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)));
+            () -> new BlockItem(BlockInit.EXAMPLE_BLOCK.get(),new Item.Properties().group(ExampleMod.TUTORIAL_GROUP)));
 
 
     public static final RegistryObject<BlockItem> CUSTOM_BLOCK = ITEMS.register("custom_block",
-            () -> new BlockItem(BlockInit.CUSTOM_BLOCK.get(), new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)));
+            () -> new BlockItem(BlockInit.CUSTOM_BLOCK.get(), new Item.Properties().group(ExampleMod.TUTORIAL_GROUP)));
 
 
 }
