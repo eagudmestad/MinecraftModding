@@ -1,6 +1,7 @@
 package com.example.examplemod.core.init;
 
 import com.example.examplemod.ExampleMod;
+import com.example.examplemod.common.blocks.CustomBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -20,4 +21,8 @@ public class BlockInit {
             .harvestLevel(2)
             .sound(SoundType.METAL)
             .setRequiresTool()));
+
+    public static final RegistryObject<CustomBlock> CUSTOM_BLOCK = BLOCKS.register("custom_block",
+            () -> new CustomBlock(AbstractBlock.Properties.create(Material.WOOD).harvestTool(ToolType.AXE)
+                    .harvestLevel(1).sound(SoundType.WOOD).setRequiresTool()));
 }

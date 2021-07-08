@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "gudmestadmod:block/custom_block" },
+    "facing=south": { "model": "gudmestadmod:block/custom_block", "y": 180 },
+    "facing=west":  { "model": "gudmestadmod:block/custom_block", "y": 270 },
+    "facing=east":  { "model": "gudmestadmod:block/custom_block", "y": 90 }
+  }
+}
